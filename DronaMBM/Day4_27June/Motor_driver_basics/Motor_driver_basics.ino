@@ -1,21 +1,30 @@
-#define mA 2
-#define mB 3
+//Author : BHANWARLAL PRAJAPAT
+//Date : 27 June 2023
+#define MOTOR_INPUT_PIN_A 2
+#define MOTOR_INPUT_PIN_B 3
 void setup() {
-  pinMode(mA, OUTPUT);
-  pinMode(mB, OUTPUT);
+  pinMode(MOTOR_INPUT_PIN_A, OUTPUT);
+  pinMode(MOTOR_INPUT_PIN_B, OUTPUT);
 }
 
 void loop() {
-
-  digitalWrite(mA, HIGH);
-  digitalWrite(mB, LOW);
+  //Rotate Anti-Clockwise
+  digitalWrite(MOTOR_INPUT_PIN_A, HIGH);
+  digitalWrite(MOTOR_INPUT_PIN_B, LOW);
+  delay(2000);
+  
+  //Stop motor
+  digitalWrite(MOTOR_INPUT_PIN_A, LOW);
+  digitalWrite(MOTOR_INPUT_PIN_B, LOW);
   delay(2000);
 
-  digitalWrite(mA, LOW);
-  digitalWrite(mB, LOW);
+  //Rotate Anti-Clockwise
+  digitalWrite(MOTOR_INPUT_PIN_A, LOW);
+  digitalWrite(MOTOR_INPUT_PIN_B, HIGH);
   delay(2000);
 
-  digitalWrite(mA, LOW);
-  digitalWrite(mB, HIGH);
+  //Stop motor
+  digitalWrite(MOTOR_INPUT_PIN_A, LOW);
+  digitalWrite(MOTOR_INPUT_PIN_B, LOW);
   delay(2000);
 }
