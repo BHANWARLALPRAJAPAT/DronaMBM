@@ -1,7 +1,7 @@
 //Author : BHANWARLAL PRAJAPAT
 //Date : 27 June 2023
-#define MOTOR_INPUT_PIN_A 2
-#define MOTOR_INPUT_PIN_B 3
+#define MOTOR_INPUT_PIN_A 4
+#define MOTOR_INPUT_PIN_B 5
 void setup() {
   pinMode(MOTOR_INPUT_PIN_A, OUTPUT);
   pinMode(MOTOR_INPUT_PIN_B, OUTPUT);
